@@ -34,3 +34,15 @@ Route::get('login' , 'App\Http\Controllers\Controller@login');
 Route::get('myname', function () {
     return ('<h1>welcome Abd Al-kareem to php</h1><br><h2>1301198619<h2>');
 });
+
+Route::get('app',function(){
+    return view('site.app');
+});
+
+Route::get('table',function(){
+ return view('site.table');
+});
+
+Route::get('/', function () {
+    return view('welcome');
+ });
